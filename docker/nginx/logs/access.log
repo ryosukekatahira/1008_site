@@ -22,3 +22,6 @@
 192.168.65.1 - - [13/Oct/2024:14:00:32 +0000] "POST /login HTTP/1.1" 404 6622 "http://localhost/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
 192.168.65.1 - - [13/Oct/2024:14:00:36 +0000] "GET / HTTP/1.1" 200 34325 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
 192.168.65.1 - - [13/Oct/2024:14:00:39 +0000] "GET / HTTP/1.1" 200 34310 "http://localhost/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+192.168.65.1 - - [17/Oct/2024:01:26:22 +0000] "GET / HTTP/1.1" 404 6622 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+192.168.65.1 - - [17/Oct/2024:01:26:22 +0000] "GET / HTTP/1.1" 404 6616 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+192.168.65.1 - - [17/Oct/2024:01:26:22 +0000] "GET /favicon.ico HTTP/1.1" 200 0 "http://localhost/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
