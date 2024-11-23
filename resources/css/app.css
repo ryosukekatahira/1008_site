@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.vollkorn-sc-regular {
+    font-family: "Vollkorn SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+  .vollkorn-sc-semibold {
+    font-family: "Vollkorn SC", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+  
+  .vollkorn-sc-bold {
+    font-family: "Vollkorn SC", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+  
+  .vollkorn-sc-black {
+    font-family: "Vollkorn SC", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.header {
+    position: relative; /* 位置基準を設定 */
+    width: 100%; /* 必要に応じて調整 */
+    height: 100px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.left-category {
+    position: absolute; /* 絶対位置を指定 */
+    top: 20px; /* 画像の上からの距離を調整 */
+    left: 20px; /* 画像の左からの距離を調整 */
+    display: flex;
+    padding: 10px;
+    border-radius: 5px; /* 角を丸くする */
+    float: left;
+    color: black;
+}
+
+.right-category {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 38.6%; /* 必要に応じて調整 */
+    height: auto; /* 高さを自動にして内容に合わせる */
+    padding-right: 20px;
+    margin-top: 30px;
+    float: right;
+    color: black;
+}
+
+.Category, .login {
+    padding: 8px 10px;
+    font-size: 13px;
+    text-align: left;
+}
+
+.main-logo {
+    display: flex;
+    font-size: 40px;
+    float: right;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0px; /* 画像の上からの距離を調整 */
+    left: 668px; /* 画像の左からの距離を調整 */
+    letter-spacing: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.login-logo {
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.form-Container {
+    height: auto;
+    width: 100%;
+}
+
+.mail-container, .pass-container {
+    width: 100%;
+}
+
+.mail-text, .pass-text {
+    font-size: 13px;
+    margin-left: 535px;
+    margin-bottom: 5px;
+}
+
+.mail-form, .pass-form {
+    width: 365px;
+    height: 42px;
+    margin-left: 535px;
+    background-color: #f5f5f5;
+    border: none;
+}
+
+.btn-container {
+    width: 100%;
+}
+
+.signin-btn {
+    height: 42px;
+    width: 100px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 560px;
+    background-color: #8a8a8a;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.signin-btn:hover {
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 5px 10px black;
+}
+
+.signin-btn:active {
+    box-shadow: 0 0 5px black;
+    margin-top: 5px;
+}
+
+.signup-btn {
+    height: 42px;
+    width: 150px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 70px;
+    background-color: #f0edd5;
+    border: none;
+    color: #333333;
+    cursor: pointer;
+}
+
+.signup-btn:hover {
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 5px 10px black;
+}
+
+.signup-btn:active {
+    box-shadow: 0 0 5px black;
+    margin-top: 5px;
+}
+
+.err-text {
+    text-align: center;
+    font-size: small;
+}
+
+.footer {
+    position: relative; /* 位置基準を設定 */
+    width: 100%; /* 必要に応じて調整 */
+    height: auto;
+    margin-top: 150px;
+    background-color: #fdfcf0;
+}
+
+.footer-list {
+    padding-top: 60px;
+    margin-left: 40px;
+}
+
+.footer-text {
+    padding: 8px 10px;
+    font-size: 13px;
+    color: #303025;
+}
+
+.Copyright {
+    text-align: center;
+    font-size: 8px;
+}
+
+a {
+    text-decoration:none; 
+}
+
+a.black-link {
+    color: black;
+}
