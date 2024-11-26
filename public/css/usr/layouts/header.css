@@ -1,0 +1,72 @@
+body {
+    max-width: 1200px; /* 最大幅を設定 */
+    margin: 0 auto;    /* 中央寄せ */
+    width: 100%;       /* 小さい画面でもレイアウトが崩れないようにする */
+}
+
+.vollkorn-sc-regular {
+    font-family: "Vollkorn SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+  .vollkorn-sc-semibold {
+    font-family: "Vollkorn SC", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+  
+  .vollkorn-sc-bold {
+    font-family: "Vollkorn SC", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+  
+  .vollkorn-sc-black {
+    font-family: "Vollkorn SC", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.header {
+    display: flex;
+    height: 80px;
+    margin-top: 3px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration:none;
+    color: black;
+}
+
+.main-logo {
+    letter-spacing: 5px;
+    width: 40%;
+    text-align: center;
+}
+
+.left-category {
+    width: 30%;
+    padding-top: 30px;
+}
+
+.right-category {
+    width: 30%;
+    padding-top: 30px;
+}
+
+.Category {
+    width: 24%;
+    float: right;
+}
+
+.login {
+    width: 20%;
+    float: right;
+}

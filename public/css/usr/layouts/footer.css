@@ -1,0 +1,21 @@
+.footer {
+    width: 100%;
+    margin-top: 150px;
+    background-color: #fdfcf0;
+}
+
+.footer-list {
+    padding-top: 40px;
+    margin-left: 40px;
+}
+
+.footer-text {
+    padding: 8px 10px;
+    font-size: 10px;
+    color: #000000;
+}
+
+.Copyright {
+    text-align: center;
+    font-size: 8px;
+}
