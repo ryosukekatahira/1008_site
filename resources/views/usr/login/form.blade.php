@@ -2,7 +2,6 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>{{ $title }}</title>
         <link rel="stylesheet" href="{{ asset('css/usr/login/form.css') }}" media="screen and (min-width:1024px)"> <!-- 画面サイズ1024px以上はこのスタイルが適用される -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,16 +16,17 @@
         <!-- 入力欄（フォーム） -->
         <form action="{{ $submitUrl }}" method="POST">
             @csrf
+        @include('usr.layouts.message')
             <div class="mail-container">
                 <p class="mail-text vollkorn-sc-regular">メールアドレス</p>
-                <input type="text" class="mail-form" name="mail">
+                <input type="text" class="mail-form" name="mail" value="{{ $params['mail'] ?? "" }}">
                 @if ($errors->has('mail'))
                     <div class="error">{!! $errors->first('mail') !!}</div>
                 @endif
             </div>
             <div class="pass-container">
                 <p class="pass-text vollkorn-sc-regular">パスワード</p>
-                <input type="password" class="pass-form" name="pass">
+                <input type="password" class="pass-form" name="pass" value="{{ $params['pass'] ?? "" }}">
                 @if ($errors->has('pass'))
                     <div class="error">{!! $errors->first('pass') !!}</div>
                 @endif

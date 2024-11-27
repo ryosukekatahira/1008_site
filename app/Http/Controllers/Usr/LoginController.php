@@ -23,25 +23,24 @@ class LoginController extends BaseController
      *
      */
 
-    public function index()
+    public function index(Request $request)
     {
+        empty(old()) ? $params = $request->all() : $params = old(); 
         $this->loginService->index();
+
         return view('usr.login.form')
         ->with([
-            "title" => $this->loginService->title,
             "submitUrl" => Route('usr.login.comp'),
+            "params" => $params,
         ]);
     }
 
     // ログイン
     public function loginComp(LoginRequest $request)
     {
-        // バリデーションチェック
-        // 入力されたメールアドレスとPWが一致するアカウントがあるかを検索
-        $this->loginService->loginComp($request->validate());
-        //　アカウントがあった場合、アカウントIDなどを取得
-        // なかった場合は、エラーを表示
-        
+        session()->keep('userData');
+        $this->loginService->loginComp();
+
         return view('usr.login.comp');
     }
 }

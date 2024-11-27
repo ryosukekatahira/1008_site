@@ -17,7 +17,7 @@
             </ul>
             <a href="index.php" class="black-link main-logo"><h1 class="vollkorn-sc-bold">1008</h1></a>
             <ul class="right-category">
-                <a href="login.php" class="black-link"><li class="login vollkorn-sc-regular">ログイン</li></a>
+                <a href="{{ Route('usr.login.') }}" class="black-link"><li class="login vollkorn-sc-regular">ログイン</li></a>
                 <a href="login.php" class="black-link"><li class="login vollkorn-sc-regular">カート</li></a>
             </ul>
         </header>
