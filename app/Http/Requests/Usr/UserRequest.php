@@ -3,13 +3,13 @@
 namespace App\Http\Requests\Usr;
 
 use Illuminate\Foundation\Http\FormRequest;
-use App\Repositories\Usr\LoginRepository;
+use App\Repositories\Usr\UserRepository;
 use App\Utils\Util;
 use Illuminate\Http\Exceptions\HttpResponseException;
 
-class LoginRequest extends FormRequest
+class UserRequest extends FormRequest
 {
-    public function __construct(private LoginRepository $loginRepository)
+    public function __construct(private UserRepository $userRepository)
     {  
     }
 
@@ -31,7 +31,7 @@ class LoginRequest extends FormRequest
 
     public function withValidator($validator)
     {
-        $userData = $this->loginRepository->getMatchUser($this->all());
+        $userData = $this->userRepository->getMatchUser($this->all());
         if (empty($userData)) {
             $validator->errors()->add('msgarea', 'メールアドレスもしくはパスワードが間違っています。');
             throw new HttpResponseException(
