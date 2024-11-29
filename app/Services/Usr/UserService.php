@@ -16,6 +16,7 @@ class UserService
 
     public function loginForm()
     {      
+        $this->title = "ログイン";
     }
 
     /**
@@ -25,5 +26,24 @@ class UserService
      */
     public function loginComp()
     {
+        $this->title = "ログインが完了しました";
+    }
+
+    /**
+     * 新規登録入力画面
+     *
+     */
+    public function create()
+    {
+        $this->title = "新規会員登録";
+    }
+
+    /**
+     * 新規登録確認画面
+     *
+     */
+    public function conf()
+    {
+        $this->title = "登録内容確認";
     }
 }

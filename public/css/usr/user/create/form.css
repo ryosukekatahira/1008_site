@@ -11,19 +11,21 @@ body {
     margin: 80px 0 70px 0;
 }
 
-.mail-container, .pass-container {
+.input-row {
     width: 30%;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
     text-align: center;
 }
 
-.mail-text, .pass-text {
+.form_data {
+    display: block;
+    margin-bottom: 8px;
     font-size: 13px;
-    text-align: left;
     margin-bottom: 0;
+    text-align: left;
 }
 
-.mail-form, .pass-form {
+.form_box {
     width: 100%;
     height: 35px;
     background-color: #f5f5f5;
