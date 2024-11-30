@@ -5,7 +5,7 @@ namespace App\Repositories\Usr;
 use App\Constants;
 use App\Models\Usr\TblAccount;
 
-class LoginRepository
+class UserRepository
 {
     public function __construct()
     {   
