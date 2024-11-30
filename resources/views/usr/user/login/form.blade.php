@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="{{ asset('css/usr/login/form.css') }}" media="screen and (min-width:1024px)"> <!-- 画面サイズ1024px以上はこのスタイルが適用される -->
+        <link rel="stylesheet" href="{{ asset('css/usr/user/login/form.css') }}" media="screen and (min-width:1024px)"> <!-- 画面サイズ1024px以上はこのスタイルが適用される -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
@@ -33,7 +33,7 @@
             </div>
             <div class="btn-container">
                 <input type="submit" value="サインイン" class="signin-btn vollkorn-sc-regular">
-                <input type="button" onclick="location.href='./signup.php'" value="新規登録はこちら" class="signup-btn vollkorn-sc-regular">
+                <input type="button" onclick="location.href='{{ route('usr.user.create.') }}'" value="新規登録はこちら" class="signup-btn vollkorn-sc-regular">
             </div>
         </form>
 
