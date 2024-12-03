@@ -46,4 +46,16 @@ class UserService
     {
         $this->title = "登録内容確認";
     }
+
+    /**
+     * 新規登録完了
+     * 
+     * @param array $params
+     * @param array $formData
+     *
+     */
+    public function comp(array $formData)
+    {
+        $this->userRepository->insTblAccount($formData);
+    }
 }

@@ -46,7 +46,7 @@
                 @endif
             </div>
             <div class="btn-container">
-                <input type="submit" value="新規登録" class="signin-btn vollkorn-sc-regular">
+                <input type="submit" value="入力内容確認" class="signin-btn vollkorn-sc-regular">
                 <input type="button" onclick="location.href='{{ route('usr.user.login.') }}'" value="ログイン済みの方" class="signup-btn vollkorn-sc-regular">
             </div>
         </form>

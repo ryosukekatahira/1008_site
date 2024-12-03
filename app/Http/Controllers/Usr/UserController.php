@@ -9,6 +9,7 @@ use App\Services\Usr\UserService;
 use App\Http\Controllers\Usr\BaseController;
 use App\Http\Requests\Usr\UserLoginRequest;
 use App\Http\Requests\Usr\UserConfirmRequest;
+use App\Http\Requests\Usr\UserCompRequest;
 
 class UserController extends BaseController
 {
@@ -99,6 +100,8 @@ class UserController extends BaseController
      */
     public function comp(Request $request)
     {
+        $formData = session()->get('form_data');
+        $this->userService->comp($formData);
         return view('usr.user.create.comp');
     }
 }

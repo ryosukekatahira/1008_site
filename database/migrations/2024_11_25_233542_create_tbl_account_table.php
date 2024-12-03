@@ -18,14 +18,15 @@ return new class extends Migration
             $table->string('password');
             $table->string('family_name', 10);
             $table->string('first_name', 10);
-            $table->string('tel1', 5);
-            $table->string('tel2', 4);
-            $table->string('tel3', 4);
+            $table->string('tel1', 5)->nullable();
+            $table->string('tel2', 4)->nullable();
+            $table->string('tel3', 4)->nullable();
             $table->string('zip', 7)->nullable();
             $table->string('address', 500)->nullable();
-            $table->timestamps();
+            $table->timestamp('create_at');
+            $table->timestamp('update_at');
             $table->timestamp('last_login_timestamp')->nullable();
-            $table->timestamp('upd_password_timestamp');
+            $table->timestamp('upd_password_timestamp')->nullable();
             $table->integer('del_flg');
         });
     }

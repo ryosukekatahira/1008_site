@@ -9,15 +9,15 @@ use Illuminate\Http\Exceptions\HttpResponseException;
 
 class UserLoginRequest extends FormRequest
 {
+    public $input = [];
+
     public function __construct(private UserRepository $userRepository)
     {  
     }
 
     public function prepareForValidation()
     {
-        $input = $this->all();
-        array_walk_recursive($input, Util::class . '::trimValue');
-        $this->merge($input);
+        $this->input = $this->all();
     }
 
     public function rules()
@@ -33,6 +33,16 @@ class UserLoginRequest extends FormRequest
     {
         $userData = $this->userRepository->getMatchUser($this->all());
         if (empty($userData)) {
+            $validator->errors()->add('msgarea', 'メールアドレスもしくはパスワードが間違っています。');
+            throw new HttpResponseException(
+                redirect()->back()
+                    ->withErrors($validator)
+                    ->withInput()
+            );
+        }
+        $hashPassword = $userData['password'];
+        $password = $this->input['pass'];
+        if (!password_verify($password, $hashPassword)) {
             $validator->errors()->add('msgarea', 'メールアドレスもしくはパスワードが間違っています。');
             throw new HttpResponseException(
                 redirect()->back()
